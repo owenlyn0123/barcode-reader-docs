@@ -27,7 +27,7 @@ needAutoGenerateSidebar: true
   
   
 ## DBR_InitLicense
-Read product key and activate the SDK.
+Reads product key and activate the SDK.
 
 ```c
 DBR_API int DBR_InitLicense (void* barcodeReader, const char* pLicense)
@@ -55,7 +55,7 @@ DBR_DestroyInstance(barcodeReader);
 
 
 ## DBR_InitLicenseFromServer
-Initialize the license and connect to the specified server for online verification.
+Initializes the license and connect to the specified server for online verification.
 
 ```c
 DBR_API int DBR_InitLicenseFromServer (void* barcodeReader, const char* pLicenseServer, const char* pLicenseKey)
@@ -77,7 +77,7 @@ Returns error code (returns 0 if the function operates successfully).
 
 
 ## DBR_InitLicenseFromLicenseContent
-Initialize barcode reader license from the license content on the client machine for offline verification.
+Initializes barcode reader license from the license content on the client machine for offline verification.
 
 ```c
 DBR_API int DBR_InitLicenseFromLicenseContent (void* barcodeReader, const char* pLicenseKey, const char* pLicenseContent)	
@@ -99,7 +99,7 @@ Returns error code (returns 0 if the function operates successfully).
 
 
 ## DBR_OutputLicenseToString
-Output the license content as an encrypted string from the license server to be used for offline license verification.
+Outputs the license content as an encrypted string from the license server to be used for offline license verification.
 
 ```c
 DBR_API int DBR_OutputLicenseToString (void* barcodeReader, char content[], int contentLen)
@@ -124,7 +124,7 @@ Returns error code (returns 0 if the function operates successfully).
 
 
 ## DBR_OutputLicenseToStringPtr
-Output the license content as an encrypted string from the license server to be used for offline license verification.
+Outputs the license content as an encrypted string from the license server to be used for offline license verification.
 
 ```c
 DBR_API int DBR_OutputLicenseToStringPtr (void* barcodeReader, char** content)
@@ -149,7 +149,7 @@ Returns error code (returns 0 if the function operates successfully).
 
 
 ## DBR_FreeLicenseString
-Free memory allocated for the license string.
+Frees memory allocated for the license string.
 
 ```c
 DBR_API void DBR_FreeLicenseString (char** content)
