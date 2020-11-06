@@ -27,7 +27,7 @@ needAutoGenerateSidebar: true
 
 
 ## InitLicense
-Read product key and activate the SDK.
+Reads product key and activates the SDK.
 
 ```cpp
 int CBarcodeReader::InitLicense (const char* pLicense)	
@@ -56,7 +56,7 @@ delete reader;
 
 
 ## InitLicenseFromServer
-Initialize the license and connect to the specified server for online verification.
+Initializes the license and connects to the specified server for online verification.
 
 ```cpp
 int CBarcodeReader::InitLicenseFromServer (const char* pLicenseServer, const char* pLicenseKey)
@@ -78,7 +78,7 @@ Returns error code (returns 0 if the function operates successfully).
 
 
 ## InitLicenseFromLicenseContent
-Initialize barcode reader license from the license content on the client machine for offline verification.
+Initializes barcode reader license from the license content on the client machine for offline verification.
 
 ```cpp
 int CBarcodeReader::InitLicenseFromLicenseContent (const char* pLicenseKey, const char* pLicenseContent)	
@@ -101,7 +101,7 @@ Returns error code (returns 0 if the function operates successfully).
 
 
 ## OutputLicenseToString
-Output the license content as an encrypted string from the license server to be used for offline license verification.
+Outputs the license content as an encrypted string from the license server to be used for offline license verification.
 
 ```cpp
 int CBarcodeReader::OutputLicenseToString (char content[], const int contentLen)
@@ -126,7 +126,7 @@ Returns error code (returns 0 if the function operates successfully).
 
 
 ## OutputLicenseToStringPtr
-Output the license content as an encrypted string from the license server to be used for offline license verification.
+Outputs the license content as an encrypted string from the license server to be used for offline license verification.
 
 ```cpp
 int CBarcodeReader::OutputLicenseToStringPtr (char** content)
@@ -149,7 +149,7 @@ Returns error code (returns 0 if the function operates successfully).
 
 
 ## FreeLicenseString
-Free memory allocated for the license string.
+Frees memory allocated for the license string.
 
 ```cpp
 void CBarcodeReader::FreeLicenseString (char** content)
