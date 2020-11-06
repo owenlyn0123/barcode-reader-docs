@@ -26,7 +26,7 @@ needAutoGenerateSidebar: true
 
 ## DecodeFile
 
-Decode barcodes from a specified image file.
+Decodes barcodes from a specified image file.
 
 ```cpp
 int CBarcodeReader::DecodeFile (const char* pFileName, const char* pTemplateName = "")	
@@ -59,7 +59,7 @@ delete reader;
 
 ## DecodeFileInMemory
 
-Decode barcodes from an image file in memory.   
+Decodes barcodes from an image file in memory.   
 
 ```cpp
 int CBarcodeReader::DecodeFileInMemory (const unsigned char* pFileBytes, int fileSize, const char* pTemplateName = "")	
@@ -96,7 +96,7 @@ delete reader;
 
 ## DecodeBuffer
 
-Decode barcodes from the memory buffer containing image pixels in defined format.
+Decodes barcodes from the memory buffer containing image pixels in defined format.
 
 ```cpp
 int CBarcodeReader::DecodeBuffer (const unsigned char* pBufferBytes, const int iWidth, const int iHeight, const int iStride, const ImagePixelFormat format, const char* pszTemplateName = "")		
@@ -139,7 +139,7 @@ delete reader;
 
 ## DecodeBase64String
 
-Decode barcode from an image file encoded as a base64 string.
+Decodes barcode from an image file encoded as a base64 string.
 
 ```cpp
 int CBarcodeReader::DecodeBase64String (const char* pBase64String, const char* pTemplateName = "")	
@@ -177,7 +177,7 @@ delete reader;
 
 ## DecodeDIB
 
-Decode barcode from a handle of device-independent bitmap (DIB).
+Decodes barcode from a handle of device-independent bitmap (DIB).
 
 ```cpp
 int CBarcodeReader::DecodeDIB (const HANDLE hDIB, const char* pszTemplateName = "")	
