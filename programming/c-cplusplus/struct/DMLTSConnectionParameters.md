@@ -8,7 +8,7 @@ needAutoGenerateSidebar: false
 
 
 # DM_LTSConnectionParameters
-Defines a struct to configure the parameters to connect to license tracking server.  
+Defines a struct to configure the parameters to connect to the License Tracking Server.  
 
 ## Typedefs
 
@@ -36,7 +36,7 @@ typedef struct tagDM_LTSConnectionParameters  DM_LTSConnectionParameters
 
 
 ### mainServerURL
-The URL of the license tracking server.
+The URL of the License Tracking Server.
 ```cpp
 const char*  tagDM_LTSConnectionParameters::mainServerURL
 ```
@@ -47,7 +47,7 @@ const char*  tagDM_LTSConnectionParameters::mainServerURL
     ""
 
 ### standbyServerURL
-The URL of the standby license tracking server.
+The URL of the standby License Tracking Server.
 ```cpp
 const char*  tagDM_LTSConnectionParameters::standbyServerURL
 ```
@@ -69,7 +69,7 @@ const char*  tagDM_LTSConnectionParameters::handshakeCode
     ""
 
 ### sessionPassword
-The session password of the handshake code set in license tracking server.
+The session password of the handshake code set in the License Tracking Server.
 ```cpp
 const char*  tagDM_LTSConnectionParameters::sessionPassword
 ```
