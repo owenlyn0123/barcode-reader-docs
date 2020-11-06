@@ -21,7 +21,7 @@ needAutoGenerateSidebar: true
 
 ## DBR_GetErrorString
 
-Get error message by error code.
+Gets error message by error code.
 
 ```c
 DBR_API const char* DBR_GetErrorString (int errorCode)	
@@ -50,7 +50,7 @@ DBR_DestroyInstance(barcodeReader);
 
 ## DBR_GetVersion
 
-Get version information of SDK.
+Gets version information of SDK.
 
 ```c
 DBR_API const char* DBR_GetVersion ()
