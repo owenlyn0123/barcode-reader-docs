@@ -22,7 +22,7 @@ needAutoGenerateSidebar: true
 
 ## decode_file
 
-Decode barcodes from a specified image file.
+Decodes barcodes from a specified image file.
 
 ```python
 BarcodeReader.decode_file(image_file_name, template_name="")
@@ -67,7 +67,7 @@ except BarcodeReaderError as bre:
 
 ## decode_buffer
 
-Decodes barcodes from the memory buffer containing image pixels in defined format.   
+Decodes barcodes from the memory buffer containing image pixels in a defined format.   
 
 ```python
 BarcodeReader.decode_buffer(image, image_pixel_format=EnumImagePixelFormat.IPF_RGB_888, template_name="")
@@ -165,7 +165,7 @@ except BarcodeReaderError as bre:
 
 ## decode_buffer_manually
 
-Decodes barcodes from the memory buffer containing image pixels in defined format.   
+Decodes barcodes from the memory buffer containing image pixels in a defined format.   
 
 ```python
 BarcodeReader.decode_buffer_manually(self, buffer, width, height, stride, image_pixel_format, template_name="")
@@ -188,7 +188,7 @@ text_results <*list[class TextResult]*> : All text results.
 
 ## init_intermediate_result
 
-Inits an intermediateResult struct with default values.
+Initializes an intermediateResult struct with default values.
 
 ```python
 BarcodeReader.init_intermediate_result(intermediate_result_type)
