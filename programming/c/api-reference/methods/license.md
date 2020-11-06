@@ -27,7 +27,7 @@ needAutoGenerateSidebar: true
   
   
 ## DBR_InitLicense
-Reads product key and activate the SDK.
+Reads the product key and activates the SDK.
 
 ```c
 DBR_API int DBR_InitLicense (void* barcodeReader, const char* pLicense)
