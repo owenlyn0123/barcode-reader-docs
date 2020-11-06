@@ -44,7 +44,7 @@ needAutoGenerateSidebar: true
 
 
 ## DBR_StartFrameDecoding
-Start a new thread to decode barcodes from the inner frame queue with specific frame decoding setting passed in.
+Starts a new thread to decode barcodes from the inner frame queue with specific frame decoding setting passed in.
 
 ```c
 DBR_API int DBR_StartFrameDecoding (void* barcodeReader, const int maxQueueLength, const int maxResultQueueLength, const int width, const int height, const int stride, const ImagePixelFormat format, const char* pTemplateName)	
@@ -79,7 +79,7 @@ DBR_DestroyInstance(barcodeReader);
 
 
 ## DBR_StartFrameDecodingEx
-Start a new thread to decode barcodes from the inner frame queue with specific frame decoding setting defined in [`FrameDecodingParameters`]() struct.
+Starts a new thread to decode barcodes from the inner frame queue with specific frame decoding setting defined in [`FrameDecodingParameters`]() struct.
 
 ```c
 DBR_API int DBR_StartFrameDecodingEx (void* barcodeReader, FrameDecodingParameters parameters, const char* pTemplateName)	
@@ -189,7 +189,7 @@ DBR_DestroyInstance(barcodeReader);
 
 ## DBR_InitFrameDecodingParameters
 
-Initialize frame decoding parameters with default values.
+Initializes frame decoding parameters with default values.
 
 ```c
 DBR_API int DBR_InitFrameDecodingParameters (void* barcodeReader, FrameDecodingParameters* pParameters)	
@@ -235,7 +235,7 @@ DBR_DestroyInstance(barcodeReader);
 
 
 ## DBR_SetErrorCallback
-Set callback function to process errors generated during frame decoding.
+Sets callback function to process errors generated during frame decoding.
 
 ```c
 DBR_API int DBR_SetErrorCallback (void* barcodeReader, CB_Error cbFunction, void* pUser)
@@ -269,7 +269,7 @@ DBR_StartFrameDecoding(barcodeReader, 2, 10, 1024, 720, 720, IPF_BINARY, "");
 
 
 ## DBR_SetTextResultCallback
-Set callback function to process text results generated during frame decoding.
+Sets callback function to process text results generated during frame decoding.
 
 ```c
 DBR_API int DBR_SetTextResultCallback (void* barcodeReader, CB_TextResult cbFunction, void* pUser)
@@ -303,7 +303,7 @@ DBR_StartFrameDecoding(barcodeReader, 2, 10, 1024, 720, 720, IPF_BINARY, "");
 
 
 ## DBR_SetIntermediateResultCallback
-Set callback function to process intermediate results generated during frame decoding.
+Sets callback function to process intermediate results generated during frame decoding.
 
 ```c
 DBR_API int DBR_SetIntermediateResultCallback (void* barcodeReader, CB_IntermediateResult cbFunction, void* pUser)	
@@ -342,7 +342,7 @@ DBR_StartFrameDecoding(barcodeReader, 2, 10, 1024, 720, 720, IPF_BINARY, "");
 
 
 ## DBR_GetLengthOfFrameQueue
-Get length of current inner frame queue.
+Gets length of current inner frame queue.
 
 ```c
 DBR_API int DBR_GetLengthOfFrameQueue (void* barcodeReader)
