@@ -38,7 +38,7 @@ BarcodeReader.init_license(dbr_license)
 
 ## init_license_from_server
 
-Initialize the license and connect to the specified server for online verification.
+Initializes the license and connect to the specified server for online verification.
 
 ```python
 BarcodeReader.init_license_from_server(license_server, license_key)
